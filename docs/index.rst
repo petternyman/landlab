@@ -12,7 +12,7 @@ Find Landlab's
 Landlab Reference Manual and API Documentation
 ==============================================
 
-The *Landlab Developer API* is a general reference manual for Landlab.
+A guide to Landlab's classes and code.
 
 Grids
 =====
@@ -22,10 +22,10 @@ Grid types
 
 As of Landlab version 0.2, there are four types of Landlab grid:
 
--  Raster
--  Voronoi-Delaunay
--  Hex
--  Radial
+-  :ref:`Raster <Raster>`
+-  :ref:`Voronoi-Delaunay <Voronoi>`
+-  :ref:`Hex <Hex>`
+-  :ref:`Radial <Radial>`
 
 The base class is `ModelGrid` with subclasses `RasterModelGrid` and
 `VoronoiDelaunayGrid`.
@@ -43,7 +43,6 @@ Methods and properties common to all grids
    landlab.grid.mappers
    landlab.grid.gradients
    landlab.grid.divergence
-   landlab.grid.grid_funcs
    landlab.grid.create
    landlab.grid.decorators
 
@@ -106,6 +105,7 @@ Hillslope geomorphology
 
    landlab.components.diffusion
    landlab.components.nonlinear_diffusion
+   landlab.components.transport_length_diffusion
 
 Fluvial geomorphology
 ---------------------
@@ -115,6 +115,7 @@ Fluvial geomorphology
 
    landlab.components.stream_power
    landlab.components.detachment_ltd_erosion
+   landlab.components.space
 
 Flow routing
 ------------
@@ -123,6 +124,7 @@ Flow routing
    :maxdepth: 4
 
    landlab.components.flow_routing
+   landlab.components.sink_fill
 
 Shallow water hydrodynamics
 ---------------------------
@@ -141,6 +143,7 @@ Land surface hydrology
   landlab.components.radiation
   landlab.components.pet
   landlab.components.soil_moisture
+  landlab.components.greenampt
 
 Landslides
 ----------
@@ -239,6 +242,7 @@ Utilities and Decorators
   landlab.core.utils
   landlab.utils.decorators
   landlab.grid.decorators
+  landlab.utils.source_tracking_algorithm
 
 
 Cellular Automata (CA)
@@ -272,7 +276,7 @@ References
 * :ref:`search`
 
 
-Search the Index
-==================
+.. Search the Index
+.. ==================
 
-* :ref:`genindex`
+.. * :ref:`genindex`
